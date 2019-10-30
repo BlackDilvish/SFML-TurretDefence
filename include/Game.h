@@ -14,10 +14,10 @@
 #include "Enemy.h"
 #include "Turret.h"
 #include "FirstTurret.h"
-#include "SecondTurret.cpp"
-#include "ThirdTurret.cpp"
-#include "FourthTurret.cpp"
-#include "bowIcon.c"
+#include "../SecondTurret.cpp"
+#include "../ThirdTurret.cpp"
+#include "../FourthTurret.cpp"
+#include "../bowIcon.c"
 
 #define MAP_MAX 5
 

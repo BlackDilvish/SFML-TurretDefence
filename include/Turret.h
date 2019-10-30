@@ -20,7 +20,7 @@ class Turret
         double vectorLength(const sf::Vector2f &vec);
         void setTexture(sf::Texture *texture);
 
-        enum Prices{first=100, second=250, third=500, fourth=1000};
+        enum Prices{first=100, second=250, third=600, fourth=1000};
 
         sf::RectangleShape shape;
 
