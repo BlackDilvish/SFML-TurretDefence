@@ -26,11 +26,9 @@ Game::~Game()
 
 void Game::initWindow()
 {
-    sf::VideoMode mode;
-    mode.width=1920;
-    mode.height=1080;
+    sf::VideoMode mode = sf::VideoMode::getDesktopMode();
 
-    window=new sf::RenderWindow(mode,"TurretDefence",sf::Style::Fullscreen);
+    window=new sf::RenderWindow(mode,"Turret Defence",sf::Style::Fullscreen);
 
     window->setFramerateLimit(60);
     window->setIcon(bowIcon.width,bowIcon.height,bowIcon.pixel_data);
@@ -81,11 +79,8 @@ void Game::initTextures()
     golem3.loadFromFile("assets/images/Golem3.png");
 
     turretTex1v1.loadFromFile("assets/images/Turret1_1.png");
-
     turretTex2v1.loadFromFile("assets/images/Turret2_1.png");
-
     turretTex3v1.loadFromFile("assets/images/Turret3_1.png");
-
     turretTex4v1.loadFromFile("assets/images/Turret4_1.png");
 }
 
@@ -101,10 +96,8 @@ void Game::initGrids()
         for(size_t j=0;j<numberOfXgrids;j++)
         {
             grid.setPosition(sf::Vector2f(j*gridSize,i*gridSize));
-
             gridsVector.push_back(grid);
         }
-
 }
 
 void Game::initMap(size_t mapNr)

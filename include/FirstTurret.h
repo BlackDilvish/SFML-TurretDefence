@@ -14,11 +14,10 @@ class FirstTurret : public Turret
             rangeShape.setOrigin(sf::Vector2f(rangeShape.getRadius(),rangeShape.getRadius()));
             upgradeCost[0] = 100;
             upgradeCost[1] = 200;
-
         }
 
 
-        ~FirstTurret(){}
+        ~FirstTurret() = default;
 
 
 

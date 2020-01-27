@@ -16,7 +16,7 @@ class FourthTurret : public Turret
             upgradeCost[1] = 1000;
         }
 
-        ~FourthTurret(){}
+        ~FourthTurret() = default;
 
 };
 

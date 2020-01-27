@@ -11,7 +11,7 @@ class Turret
 {
     public:
         Turret(size_t gridID,std::vector<sf::RectangleShape> &gridsVector);
-        virtual ~Turret();
+        virtual ~Turret() = default;
 
         void update(std::vector<Enemy> &enemiesVector);
         void upgrade();

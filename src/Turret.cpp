@@ -25,11 +25,6 @@ Turret::Turret(size_t gridID,std::vector<sf::RectangleShape> &gridsVector)
     drawTemp = false;
 }
 
-Turret::~Turret()
-{
-
-}
-
 void Turret::update(std::vector<Enemy> &enemiesVector)
 {
     shootTimer+=1;

@@ -16,7 +16,7 @@ class SecondTurret : public Turret
             upgradeCost[1] = 300;
         }
 
-        ~SecondTurret(){}
+        ~SecondTurret() = default;
 
 };
 
